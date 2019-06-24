@@ -1,0 +1,100 @@
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+
+html{
+	font-family:'bebasneue';
+}
+
+header{
+	font-size:113%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	text-rendering: optimizeLegibility
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
+
+.title{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	width:100%;
+	height:8rem;
+	font-size:3em;
+	background-color:rgba(0,0,0,.3);
+	color:rgba(255, 255, 255, 0.75);
+}
+
+
+.clearfix:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+@-webkit-keyframes blink{	
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}	
+@keyframes blink{	
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#jumbotron{
+	width:100%;
+	min-height:1px;
+	float:left;
+}
+
+#jumbotron .font{	
+	width:20%;
+	float:left;
+	color:rgba(255,255,255,.75);
+	margin:4rem 0;
+	text-align:center;
+}
+
+@-webkit-keyframes jumbotron { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} 
+@keyframes jumbotron { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.gradient1{
+	background: -webkit-linear-gradient(215deg, #0f718b 0%, #724781 50%, #8e2f2f 100%);
+	background: linear-gradient(235deg, #0f718b 0%, #724781 50%, #8e2f2f 100%);
+	background-size: 800% 800%;
+	-webkit-animation: jumbotron 20s linear infinite;
+	animation: jumbotron 20s linear infinite;
+}
+
+.thin{font-family:'bebasneuethin',Arial,Sans-serif}
+.light{font-family:'bebasneuelight'Arial,Sans-serif}
+.book{font-family:'bebasneuebook'Arial,Sans-serif}
+.normal{font-family:'bebasneue'Arial,Sans-serif}
+.bold{font-family:'bebasneuebold'Arial,Sans-serif}
+
